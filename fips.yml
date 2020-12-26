@@ -1,0 +1,9 @@
+#
+# fips-curl
+#
+---
+
+   exports:
+       header-dirs:
+           - include
+
