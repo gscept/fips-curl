@@ -1,3 +1,5 @@
 if(FIPS_WINDOWS)
     configure_file(${CMAKE_CURRENT_LIST_DIR}/bin/win64/libcurl-x64.dll ${FIPS_PROJECT_DEPLOY_DIR}/libcurl-x64.dll COPYONLY)
-endif()    
+    configure_file(${CMAKE_CURRENT_LIST_DIR}/bin/win64/libcrypto-1_1-x64.dll ${FIPS_PROJECT_DEPLOY_DIR}/libcrypto-1_1-x64.dll COPYONLY)
+    configure_file(${CMAKE_CURRENT_LIST_DIR}/bin/win64/libssl-1_1-x64.dll ${FIPS_PROJECT_DEPLOY_DIR}/libssl-1_1-x64.dll COPYONLY)
+endif()
